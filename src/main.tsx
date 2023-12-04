@@ -60,8 +60,8 @@ table {
 body {
   font-weight: 300;
   font-family: 'Source Sans Pro', sans-serif;
-  background-color:${(props) => props.theme.bgColor};
-  color:${(props) => props.theme.textColor};
+  background-color: #22223a;
+  color: black;
   line-height: 1.2;
 }
 a {
@@ -71,10 +71,8 @@ a {
 `;
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <RecoilRoot>
-      <GlobalStyle />
-      <App />
-    </RecoilRoot>
-  </React.StrictMode>
+  <RecoilRoot>
+    <GlobalStyle />
+    <App />
+  </RecoilRoot>
 );
